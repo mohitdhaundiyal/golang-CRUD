@@ -18,7 +18,7 @@ func main() {
 	r := mux.NewRouter()
 	routes.Routes(r)
 
-	// go server
+	// Go Server
 	fmt.Println("Serving application on port 9090.")
 	log.Fatal(http.ListenAndServe(":9090", r))
 }
